@@ -1,6 +1,17 @@
 .WeatherApp {
   font-family: "Comfortaa", cursive;
+
   border: 1px solid #999;
+
+  background-image: linear-gradient(
+    to top,
+    #0c3483 0%,
+    #a2b6df 100%,
+    #6b8cce 100%,
+    #a2b6df 100%
+  );
+  padding: 16px;
+  margin: 20px;
 }
 
 .WeatherApp ul {
@@ -9,5 +20,60 @@
 }
 
 .WeatherApp li {
+  color: aliceblue;
   list-style: none;
+}
+.WeatherApp .row .main-info {
+  background-color: rgb(238, 238, 238, 0.3);
+
+  padding: 10px;
+  margin: 10px;
+}
+.WeatherApp .row .forecast {
+  color: aliceblue;
+  background-color: rgb(238, 238, 238, 0.3);
+
+  padding: 10px;
+  margin: 10px 0 10px 10px;
+}
+.WeatherApp img {
+  height: 120px;
+}
+.WeatherApp .row .main-icon {
+  text-align: center;
+}
+.WeatherApp h1 {
+  font-size: 50px;
+  padding-top: 16px;
+  color: aliceblue;
+}
+.WeatherApp h3 {
+  color: aliceblue;
+}
+.WeatherApp h5 {
+  color: aliceblue;
+}
+.WeatherApp .row .col-3 {
+  margin-left: 0;
+}
+.WeatherApp .row .col-3 .current {
+  margin-left: 0px;
+  background-color: rgb(238, 238, 238, 0.3);
+  border: none;
+}
+.WeatherApp .row .col-3 .search {
+  padding: 6px 20px;
+  margin-right: 5px;
+  margin-left: -5px;
+  background-color: rgb(238, 238, 238, 0.3);
+  border: none;
+}
+.WeatherApp .row .col-9 .form-control {
+  background-color: rgb(238, 238, 238, 0.3);
+  border: none;
+  color: aliceblue;
+}
+.WeatherApp ::placeholder {
+  color: aliceblue;
+  opacity: 1;
 }
