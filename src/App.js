@@ -4,7 +4,7 @@ import WeatherApp from "./WeatherApp";
 function App() {
   return (
     <div className="App">
-      <WeatherApp />
+      <WeatherApp city="New York" />
       <footer>
         This project was coded by Alina Pisarenko and is{" "}
         <a

@@ -46,12 +46,20 @@
   font-size: 50px;
   padding-top: 16px;
   color: aliceblue;
+  margin-bottom: 0;
 }
 .WeatherApp h3 {
   color: aliceblue;
+  margin-bottom: 0;
 }
+
 .WeatherApp h5 {
   color: aliceblue;
+  font-size: 15px;
+}
+.WeatherApp h4 {
+  color: aliceblue;
+  font-size: 15px;
 }
 .WeatherApp .row .col-3 {
   margin-left: 0;
