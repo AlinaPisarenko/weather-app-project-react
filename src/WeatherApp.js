@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./WeatherApp.css";
 import axios from "axios";
@@ -10,7 +11,7 @@ export default function WeatherApp(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
-      date: "Monday 3:00 PM",
+      date: new Date(response.data.dt * 1000),
       city: response.data.name,
       temp: Math.round(response.data.main.temp),
       wind: response.data.wind.speed,
@@ -49,7 +50,9 @@ export default function WeatherApp(props) {
         <div className="row">
           <div className="col-4 main-info">
             <h3>{weatherData.city}</h3>
-            <h4>{weatherData.date}</h4>
+            <h4>
+              <FormattedDate date={weatherData.date} />
+            </h4>
             <div className="row main-icon">
               <div className="col-6">
                 <img src={weatherData.icon} alt={weatherData.description} />
@@ -64,7 +67,7 @@ export default function WeatherApp(props) {
               <li>Wind: {weatherData.wind}</li>
             </ul>
           </div>
-          <div className="col-7 forecast">blaaaa</div>
+          <div className="col-7 forecast">Forecast</div>
         </div>
       </div>
     );
