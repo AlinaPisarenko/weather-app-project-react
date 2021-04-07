@@ -10,8 +10,8 @@ export default function WeatherForecast(props) {
 
   function handleSearch(response) {
     console.log(response);
-    setLoaded(true);
     setForecast(response.data.daily);
+    setLoaded(true);
   }
 
   if (loaded) {
@@ -19,8 +19,9 @@ export default function WeatherForecast(props) {
     return (
       <div className="WeatherForecast">
         <div className="row">
-          <div className="col"></div>
-          <WeatherForecastDay data={forecast[0]} />
+          <div className="col">
+            <WeatherForecastDay data={forecast[0]} />
+          </div>
         </div>
       </div>
     );
