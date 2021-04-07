@@ -25,13 +25,14 @@
 }
 .WeatherApp .row .main-info {
   background-color: rgb(238, 238, 238, 0.3);
-
+  border-radius: 5px;
   padding: 10px;
   margin: 10px;
 }
 .WeatherApp .row .forecast {
   color: aliceblue;
   background-color: rgb(238, 238, 238, 0.3);
+  border-radius: 5px;
 
   padding: 10px;
   margin: 10px 0 10px 10px;
@@ -42,11 +43,22 @@
 .WeatherApp .row .main-icon {
   text-align: center;
 }
-.WeatherApp h1 {
+
+.WeatherApp .col-6 {
+  margin-left: -15px;
+  padding-right: 0;
+}
+
+.WeatherApp .main-temp {
   font-size: 50px;
-  padding-top: 16px;
   color: aliceblue;
-  margin-bottom: 0;
+}
+.WeatherApp .units {
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  top: -28px;
+  color: aliceblue;
 }
 .WeatherApp h3 {
   color: aliceblue;
@@ -56,6 +68,7 @@
 .WeatherApp h5 {
   color: aliceblue;
   font-size: 15px;
+  margin-top: -10px;
 }
 .WeatherApp h4 {
   color: aliceblue;
