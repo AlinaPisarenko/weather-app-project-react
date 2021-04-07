@@ -1,8 +1,15 @@
-import React, { useReducer } from "react";
+import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import "./WeatherForecastDay.css";
 
 export default function WeatherForecastDay(props) {
+  function dayT() {
+    let date = new Date(props.data.dt * 1000);
+    let day = date.getDay();
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    return days[day];
+  }
+
   function maxTemp() {
     let max = Math.round(props.data.temp.max);
     return max;
@@ -10,12 +17,6 @@ export default function WeatherForecastDay(props) {
   function minTemp() {
     let min = Math.round(props.data.temp.min);
     return min;
-  }
-  function dayT() {
-    let date = new Date(props.data.dt * 1000);
-    let day = date.getDay();
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    return days[day];
   }
 
   return (
