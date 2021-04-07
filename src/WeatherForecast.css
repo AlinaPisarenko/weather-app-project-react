@@ -9,3 +9,9 @@
   opacity: 0.5;
   margin-left: 7px;
 }
+.WeatherForecast .row {
+  max-width: 410px;
+}
+.WeatherForecast .col {
+  padding: 0;
+}
