@@ -36,8 +36,8 @@
   padding: 10px;
   margin: 10px 0 10px 10px;
 }
-.WeatherApp img {
-  height: 120px;
+.WeatherApp canvas {
+  padding: 12px 0 0 20px;
 }
 .WeatherApp .row .main-icon {
   text-align: center;
