@@ -1,6 +1,7 @@
 .App {
   max-width: 620px;
   margin: 20px auto;
+  padding-left: 25px;
 }
 
 .App footer {

@@ -7,11 +7,11 @@
 }
 .WeatherForecast-temp-min {
   opacity: 0.5;
-  margin-left: 7px;
+  margin-left: 0px;
 }
 .WeatherForecast .row {
-  max-width: 300px;
+  max-width: 290px;
 }
 .WeatherForecast .col-4 {
-  max-width: 75px;
+  max-width: 90px;
 }
