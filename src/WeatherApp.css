@@ -35,6 +35,7 @@
 }
 .WeatherApp .row .main-icon {
   text-align: center;
+  padding-left: 15px;
 }
 
 .WeatherApp .col-6 {

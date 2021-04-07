@@ -10,9 +10,8 @@
   margin-left: 7px;
 }
 .WeatherForecast .row {
-  max-width: 330px;
+  max-width: 300px;
 }
-.WeatherForecast .col {
-  padding: 0;
-  max-width: 80px;
+.WeatherForecast .col-4 {
+  max-width: 75px;
 }
