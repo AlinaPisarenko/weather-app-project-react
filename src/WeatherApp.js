@@ -11,6 +11,7 @@ export default function WeatherApp(props) {
 
   function handleSearch(response) {
     setWeatherData({
+      coordinates: response.data.coord,
       ready: true,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
