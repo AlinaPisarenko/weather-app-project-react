@@ -4,6 +4,8 @@ import WeatherInfo from "./WeatherInfo";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./WeatherApp.css";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 export default function WeatherApp(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -57,11 +59,14 @@ export default function WeatherApp(props) {
                 value="Search"
                 className="btn btn-primary search"
               />
-              <input
+              <button
                 type="submit"
                 value="O"
                 className="btn btn-primary current"
-              />
+              >
+                {" "}
+                <FontAwesomeIcon icon={faMapMarkerAlt} />
+              </button>
             </div>
           </div>
         </form>
