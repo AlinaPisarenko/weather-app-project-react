@@ -29,9 +29,20 @@ export default function WeatherApp(props) {
     event.preventDefault();
     search();
   }
-
+  function submitLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(currentLocation);
+  }
   function handleCityChange(event) {
     setCity(event.target.value);
+  }
+
+  function currentLocation(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiKey = `c9af21311efae38764da31570e4feab2`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric`;
+    axios.get(`${apiUrl}&appid=${apiKey}`).then(handleSearch);
   }
 
   function search() {
@@ -61,8 +72,8 @@ export default function WeatherApp(props) {
               />
               <button
                 type="submit"
-                value="O"
                 className="btn btn-primary current"
+                onClick={submitLocation}
               >
                 {" "}
                 <FontAwesomeIcon icon={faMapMarkerAlt} />

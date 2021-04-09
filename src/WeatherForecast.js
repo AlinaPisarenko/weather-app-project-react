@@ -33,7 +33,7 @@ export default function WeatherForecast(props) {
               return null;
             }
           })}
-          <div class="w-100"></div>
+          <div className="w-100"></div>
           {forecast.map(function (dailyForecast, index) {
             if (index > 2 && index < 6) {
               return (
